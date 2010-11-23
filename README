@@ -1,4 +1,6 @@
-Scripts for olinmyth project.
+Scripts for the olinmyth project
 
-branch 'mythtv' is for the recording host
-branch 'transcode' is for the transcoding host
+'''For the recording machines'''
+
+Main script use:
+torrent_transcode
