@@ -49,5 +49,5 @@ echo "[`date "+%Y-%m-%Oe %H:%M:%S"`]: linking for transcode" >> $LOG_FILE
 ln -s "${DIR}/${FILE}" "${SHARED_DIR}/${PRETTY_NAME}"
 
 # --- report to twitter
-${TWEET} "[REC] ${TITLE}, ${SUBTITLE}" "${PRETTY_NAME}"
+${TWEET} "[REC] ${TITLE}, ${SUBTITLE}" "${PRETTY_NAME}.torrent"
 
