@@ -13,7 +13,7 @@ SHARED_DIR=/var/lib/mythtv/recordings_pretty
 RTORRENT_DIR=/home/mythtv/rtorrent
 WEB_TORRENT_DIR=/home/mythtv/torrents
 TMP_DIR=/home/mythtv/tmp
-TWEET=/usr/local/bin/tweet.py
+TWEET=/usr/local/bin/tweet_bitly.py
 
 DIR=${1}
 FILE=${2}
@@ -49,5 +49,5 @@ echo "[`date "+%Y-%m-%Oe %H:%M:%S"`]: linking for transcode" >> $LOG_FILE
 ln -s "${DIR}/${FILE}" "${SHARED_DIR}/${PRETTY_NAME}"
 
 # --- report to twitter
-${TWEET} "Recorded ${TITLE}, ${SUBTITLE}"
+${TWEET} "[REC] ${TITLE}, ${SUBTITLE}" "${PRETTY_NAME}"
 
